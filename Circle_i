@@ -1,0 +1,10 @@
+class Circle_i{
+float r=5;
+double area;
+public static void main (String args[])
+{
+Circle obj = new Circle();
+obj.area = 3.14*obj.r*obj*r;
+System.out.println("The area of circle =" +obj.area);
+}
+}
