@@ -1,0 +1,10 @@
+class average_i{
+int a=15, b=20 , c=25;
+float avg;
+public static void main(String[]args)
+{
+average_i obj = new average_i();
+obj.avg = (obj.a+obj.b+obj.c)/3;
+System.out.println("Average=" +obj.avg);
+}
+}
