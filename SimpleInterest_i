@@ -1,0 +1,10 @@
+class SimpleInterest_i{
+float p=1500,r=5,t=10;
+float si;
+public static void main(String[]args)
+{
+SimpleInterest_i obj=new SimpleInterest_i();
+obj.si=(obj.p*obj.r*obj.t)/100;
+System.out.println("Simple interest is=" +obj.si);
+}
+}
