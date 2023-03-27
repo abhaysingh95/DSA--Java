@@ -1,0 +1,9 @@
+class Rectangle_i{
+int w=5, l=10;
+int area;
+public static void main(String args[]){
+Rectangle_i obj= new Rectangle_i();
+obj.area = obj.w*obj.l;
+System.out.println("Area of rectangle=" +obj.area);
+}
+}
