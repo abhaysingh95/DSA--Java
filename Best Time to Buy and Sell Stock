@@ -1,0 +1,32 @@
+// Best Time to Buy and Sell Stock (LeetCode Problem No.- 121)
+
+public class Main
+{
+    public static void buyAndSell(int arr[]){
+        int n = arr.length;
+        int buy = arr[0];
+        int profit = 0;
+        
+        for(int i=1; i<n; i++){
+            if(arr[i] < buy){
+                buy = arr[i];
+            }
+            else if(arr[i] - buy > profit){
+                profit = arr[i] - buy;
+            }
+        }
+        
+        System.out.print("Max Profit is : "+ profit);
+    }
+    
+	public static void main(String[] args) {
+	    int arr[] = {7,6,4,3,1};
+	    for(int i=0; i<arr.length; i++){
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+	    buyAndSell(arr);
+	}
+}
+
+
